@@ -4,13 +4,15 @@
             <h3> {{group.name}} </h3>
             <ul>
                 <li *ngFor="let component of group.components">
-                    <a> {{component.name}} </a>
+                    <a routerLink="{{component.routeLink}}"> {{component.name}} </a>
                 </li>
             </ul>
         </nav>
     </md-sidenav>
 
-    <div class="my-content">Main content</div>
+    <div class="my-content">
+        <router-outlet></router-outlet>
+    </div>
     
 
 

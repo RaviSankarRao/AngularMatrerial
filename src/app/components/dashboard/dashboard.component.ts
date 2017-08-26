@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
 
     const formControls: AppComponent[] = [];
 
-    formControls.push({ name: 'Input', routeLink: null });
+    formControls.push({ name: 'Input', routeLink: '/input-example' });
     formControls.push({ name: 'Radio button', routeLink: null });
     formControls.push({ name: 'Checkbox', routeLink: null });
     formControls.push({ name: 'Select', routeLink: null });
@@ -36,7 +36,7 @@ export class DashboardComponent implements OnInit {
     buttons.push({ name: 'Progress spinner', routeLink: null });
     buttons.push({ name: 'Progress bar', routeLink: null });
 
-    this.componentGroups.push({ name: 'BUTTONS, INDICATORS & ICONS', components: buttons });
+    this.componentGroups.push({ name: 'Buttons, icons and indicators', components: buttons });
 
     const navigation: AppComponent[] = [];
 
@@ -54,6 +54,22 @@ export class DashboardComponent implements OnInit {
     layout.push({ name: 'Tab', routeLink: null });
 
     this.componentGroups.push({ name: 'layout', components: layout });
+
+    const popUps: AppComponent[] = [];
+
+    popUps.push({ name: 'Dialog', routeLink: null });
+    popUps.push({ name: 'Tooltip', routeLink: null });
+    popUps.push({ name: 'Snackbar', routeLink: null });
+
+    this.componentGroups.push({ name: 'Popups and Modals', components: popUps });
+
+    const dataTable: AppComponent[] = [];
+
+    dataTable.push({ name: 'Table', routeLink: null });
+    dataTable.push({ name: 'Sort header', routeLink: null });
+    dataTable.push({ name: 'Paginator', routeLink: null });
+
+    this.componentGroups.push({ name: 'Data Table', components: dataTable });
   }
 
 }
